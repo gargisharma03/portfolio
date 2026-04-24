@@ -172,6 +172,28 @@
             color: var(--accent-primary);
         }
 
+        .hero-img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 8px solid whitesmoke;
+            
+            
+            transform: rotate(-5deg);
+            
+            /* Smooth hover animation */
+            transition: transform 0.3s ease;
+            
+            /* Positioning */
+            margin-bottom: 1.5rem;
+        }
+
+        /* On hover: straighten slightly */
+        .hero-img:hover {
+        transform: rotate(0deg) scale(1.05);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.8rem; }
@@ -184,6 +206,7 @@
 
     <section class="hero">
         <div class="container">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQHvflw3jtdPqA/profile-displayphoto-scale_400_400/B56Z0RCu7CGYAk-/0/1774107423699?e=1778716800&v=beta&t=W8KABCxIn0Ko8tAYWw7zPAcAzz9EbZDYLvAUIanhigM" alt="Gargi Sharma" class="hero-img">
             <h1>Gargi Sharma</h1>
             <p>Aspiring Software Engineer &bull; B.Tech CSAI @ IGDTUW</p>
         </div>
@@ -264,7 +287,7 @@
                     <li>Developed a distraction-minimized interface tailored for neurodivergent youth (ADHD audience).</li>
                     <li>Built backend to process voice “energy dump” journals for predicting optimal hyperfocus windows.</li>
                     <li>Implemented a gamified Dopamine Menu generator and auto-rescheduling functionality.</li>
-                    <li><a href="https://github.com/gargisharma03/DopamineForge" target="_blank">GitHub Repository</a></li>
+                    <li><a href="https://github.com/gargisharma03/DopamineForge" target="_blank" style="color: var(--text-primary);">GitHub Repository</a></li>
                 </ul>
             </div>
 
@@ -278,7 +301,7 @@
                     <li>Created a Pinterest-style image gallery and mood-based recommendations for Rangoli art.</li>
                     <li>Designed an interactive canvas board for drawing and receiving inspiration from traditional designs.</li>
                     <li>Developed responsive frontend for a government-level cultural preservation problem statement.</li>
-                    <li><a href="https://github.com/gargisharma03/SIH-KOLAMS" target="_blank">GitHub Repository</a></li>
+                    <li><a href="https://github.com/gargisharma03/SIH-KOLAMS" target="_blank" style="color: var(--text-primary);">GitHub Repository</a></li>
                 </ul>
             </div>
         </div>
